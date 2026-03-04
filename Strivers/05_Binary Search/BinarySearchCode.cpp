@@ -39,7 +39,7 @@ class Solution{
     // -----------------------------------------------------
 };
 
-int main(){
+int main(){    
     Solution method; 
     vector <int> arr = {-1,0,3,5,9,12}; 
     cout << "Result : " << method.search(arr, 5) << endl; 
