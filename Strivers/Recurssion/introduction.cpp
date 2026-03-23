@@ -25,11 +25,48 @@ class Recursion{
         if(v[n]%2 == 0) cout << v[n] << " is Even" << endl; 
     }
 
+    int power(int n, int exp){
+        if(exp == 0) return 1; 
+        return n * power(n,exp-1); 
+    }
+
+    void fibonnacciNumber(int upto, int count, int a, int b){
+        if(count == upto && a != 1 && b != 1){
+            cout << a+b << endl; 
+            return;
+        } 
+        if(count == 1){
+            cout << "0 "; 
+            count++;
+        }
+        if(count == 2){
+            cout << "1 "; 
+            a = 1;
+            count++;
+        }
+        if(count == 3){
+            cout << "1 ";
+            b = 1;
+            count++;
+        }
+        
+
+        // 
+        cout << a+b << " "; 
+        count++;
+        fibonnacciNumber(upto, count, b, a+b); 
+
+
+    }
+
 };
 
 int main(){
     Recursion r; 
-    int choice = 3; 
+    int choice = 5; 
+    int base; 
+    int pow; 
+    vector <int> v; 
     
     // Factorial 
     switch(choice){
@@ -45,10 +82,24 @@ int main(){
             break; 
         
         case 3: 
-            vector <int> v = {1,8,3,4,9,12,77,64}; 
+            v = {1,8,3,4,9,12,77,64}; 
             r.evenOnly(v,v.size()-1); 
             break; 
 
+        case 4: 
+            base = 5; 
+            pow = 80; 
+            cout << base<<"^"<<pow <<  "is : " << r.power(base,pow) << endl; 
+            break;
+        
+        case 5: 
+            r.fibonnacciNumber(1,1,1,1); 
+            break; 
+
+        default: 
+            cout << "Wrong Input" << endl; 
+            break; 
+        
     }
 
     // 

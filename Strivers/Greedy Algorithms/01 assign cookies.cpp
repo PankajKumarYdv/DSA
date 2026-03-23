@@ -25,8 +25,8 @@ class Solution {
 
 int main() {
     Solution leetcode;
-    vector<int> g = {1, 2, 3};
-    vector<int> s = {1, 1};
+    vector<int> g = {1,5,3,3,4};
+    vector<int> s = {4,2,1,2,1,3};
     cout << leetcode.assignCookies(g, s) << endl;
     
 }
