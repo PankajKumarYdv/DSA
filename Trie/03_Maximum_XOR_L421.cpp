@@ -28,7 +28,7 @@ int main(){
     vector<int> nums = {3,10,5,25,2,8}; 
     vector <int> xorResult = m.xorOperation(nums); 
     for(auto num : xorResult){
-        cout << num << " "; 
+        cout << num << " " << endl; 
     }
 
 }
