@@ -15,6 +15,7 @@ class SegmentTree{
         build(1,0,n-1, arr); 
     }
 
+    
     void build(int node, int start, int end, vector<int>& arr){
         if(start == end) {
             tree[node] = arr[start]; 
