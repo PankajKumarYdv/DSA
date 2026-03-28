@@ -82,4 +82,5 @@ class Leetcode{
 
 int main(){
     Leetcode method;
+    cout << 
 }

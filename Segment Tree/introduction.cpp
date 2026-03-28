@@ -5,8 +5,8 @@ using namespace std;
 
 class SegmentTree{
     public: 
-    vector<int> tree; 
-    int n; 
+        int n; 
+        vector<int> st; 
 
     // Segment Tree 
     SegmentTree(vector<int>& arr){
