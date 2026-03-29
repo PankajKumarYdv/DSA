@@ -10,9 +10,9 @@ class SegmentTree{
 
     // Segment Tree 
     SegmentTree(vector<int>& arr){
-        n = arr.size(); 
+        n = arr.size()-1; 
         st.resize(4*n); 
-        buildTree(0,0,n-1, arr); 
+        buildTree(0,0,n, arr); 
     }
 
     
@@ -73,6 +73,7 @@ class SegmentTree{
         updateSegmentTree(index,value,0, 0,n); 
     }
 
+
     // printing 
     void print(){
         for(auto ele : st){
@@ -125,7 +126,8 @@ int main(){
         cout << m.queryProcessing(i,i,nums) << " ";
     }
     cout << endl; 
- 
+
+    // 
 
 
     
