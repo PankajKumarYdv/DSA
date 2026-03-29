@@ -27,8 +27,8 @@ class Trie{
         return newNode; 
     }
 
-    // 
-    trieNode* root; 
+    trieNode* root;  // root node
+
     Trie(){ /* <- constructor 
         Have same name as class name, 
         No return type, 
@@ -42,7 +42,7 @@ class Trie{
     void insert(string word){
         trieNode* chrowler = root; 
         for(char ch : word){
-            int idx = ch-'a'; 
+            int idx = ch -'a';  
             if(chrowler->child[idx] == NULL){
                 chrowler->child[idx] = getNode(); 
             }
