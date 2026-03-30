@@ -10,7 +10,6 @@ class Leetcode{
 
 int main(){
     Leetcode m; 
-
-
+    cout << "Program is under construction" ; 
     return 0; 
 }
