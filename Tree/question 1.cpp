@@ -106,6 +106,7 @@ int main(){
             if(i == 0) result[i][j] = in[j]; 
             if(i == 1) result[i][j] = pre[j]; 
             if(i == 2) result[i][j] = post[j]; 
+
         }
     }
 
@@ -115,5 +116,6 @@ int main(){
         }
         cout << endl; 
     }
+    return 0; 
 
 }
