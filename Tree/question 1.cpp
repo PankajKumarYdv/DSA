@@ -88,7 +88,7 @@ class BinaryTree{
 int main(){
     BinaryTree bt; 
     Node* root = NULL;
-    vector <int> data = {10,5,15,3,7,-1,18};
+    // vector <int> data = {10,5,15,3,7,-1,18};
     for(auto ele : data){
         root = bt.insert(root, ele); 
     }
