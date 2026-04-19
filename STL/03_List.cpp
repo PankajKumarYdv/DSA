@@ -18,8 +18,9 @@ int main(){
     for(auto ele : l){
         cout << ele << " "; 
     }
+    cout << endl; 
 
-    
+    cout << "Another Method" ; 
     for(auto ele = l.begin(); ele != l.end(); ++ele){
         cout << *ele << " "; 
     }
