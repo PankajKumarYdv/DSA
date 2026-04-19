@@ -14,10 +14,12 @@ int main(){
     l.push_front(13); 
     l.push_front(22); 
 
-    // for(auto ele : l){
-    //     cout << ele << " "; 
-    // }
+    cout << "For Each method : " ; 
+    for(auto ele : l){
+        cout << ele << " "; 
+    }
 
+    
     for(auto ele = l.begin(); ele != l.end(); ++ele){
         cout << *ele << " "; 
     }
