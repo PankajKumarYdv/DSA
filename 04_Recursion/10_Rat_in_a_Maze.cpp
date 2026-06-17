@@ -63,8 +63,8 @@ class Solution{
 int main(){
     Solution o; 
 
-    // vector<vector<int>> maze =  {{1, 0, 0, 0}, {1, 1, 0, 1}, {1, 1, 0, 0}, {0, 1, 1, 1}};
-    vector<vector<int>> maze = {{1,1,0,0,1},{1,1,1,1,0},{1,1,1,0,1},{0,0,1,0,0},{1,1,1,1,1}}; 
+    vector<vector<int>> maze =  {{1, 0, 0, 0}, {1, 1, 0, 1}, {1, 1, 0, 0}, {0, 1, 1, 1}};
+    // vector<vector<int>> maze = {{1,1,0,0,1},{1,1,1,1,0},{1,1,1,0,1},{0,0,1,0,0},{1,1,1,1,1}}; 
     vector<string> ans = o.findPath(maze, maze.size());
 
     for(string path : ans){
